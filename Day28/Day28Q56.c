@@ -1,0 +1,26 @@
+/*
+Q56
+Read and print elements of a one-dimensional array.
+*/
+
+#include <stdio.h>
+
+int main() {
+    int arr[10], i, n;
+
+    printf("Enter number of elements: ");
+    fflush(stdout);
+    scanf("%d", &n);
+
+    printf("Enter %d elements:\n", n);
+    for (i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
+    }
+
+    printf("Array elements are:\n");
+    for (i = 0; i < n; i++) {
+        printf("%d\n", arr[i]);
+    }
+
+    return 0;
+}
